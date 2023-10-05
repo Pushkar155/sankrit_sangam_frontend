@@ -1,0 +1,122 @@
+.quiz{
+    height: 100vh;
+    width: 100%;
+    .quiz_navbar{
+        height: 10vh;
+        width: 100%;
+        background:linear-gradient(to right,#004aad,#cb6ce6);
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        align-items: center;
+        // justify-content:space-evenly;
+        .but{
+            height:30px;
+            width: 30px;
+            border-radius: 50%;
+            border: 2.5px solid white;
+            margin: 30px;
+            // padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            .icon{
+                color: white;
+                font-size: 22px;
+            }
+        }
+
+        .name{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        
+            img{
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+            }
+            h3{
+                color: #ffffff;
+            }
+        }
+    }
+    .quiz_data{
+        margin-top: 35px;
+        height: 90vh;
+        width: 100%;
+        .block{
+            height: 5vh;
+        }
+        .data_testdata{
+            margin-bottom: 40px;
+            h4{
+                margin: 15px;
+                margin-left: 40px;
+                font-size: 15px;
+                font-weight: 600;
+                color: #453f3f;
+            }
+
+          
+            .data_buttons{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 15px;
+                button{
+                    display: flex;
+                    align-items: center;
+                }
+                .buton_hover {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    // gap: 8px; 
+                    background-color: #8C52FF;
+                    border: 0px solid #ee58ff;
+                    border-radius: 5px;
+                    box-shadow: #545252 2px 2px 0 0;
+                    width: 50%;
+                    height: 6vh;
+                    padding: 5px;
+                    color: #ffffff;
+                    cursor: pointer;
+                    
+                    font-weight: 600;
+                    font-size: 12px;
+                    padding: 0 18px;
+                    line-height: 50px;
+                    text-align: center;
+                    text-decoration: none;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    .icon {
+                        font-size: 25px; /* Adjust the icon size as needed */
+                      }
+                    }
+
+                    .buton_hover:hover {
+                    background-color: #8C52FF;
+                    }
+
+                    .buton_hover:active {
+                    box-shadow: #abff45 2px 2px 0 0;
+                    transform: translate(2px, 2px);
+                    }
+                    
+
+                    @media (min-width: 768px) {
+                    .buton_hover {
+                        min-width: 120px;
+                        padding: 0 25px;
+                    }
+                    }
+
+                }
+            }
+        }
+    }
