@@ -7,7 +7,8 @@ import { useAuth } from '../../AuthContext';
 import {useNavigate} from "react-router-dom"
 
 const Unit = () => {
-    const {setUnit} =useAuth();
+    const {setUnit,page} =useAuth();
+    const substring = page.slice(0, 3).toUpperCase();
     const navigate = useNavigate();
     const handleButtonClick = (event) => {
         const apiName = event.target.getAttribute('data-api-name');
@@ -25,6 +26,9 @@ const Unit = () => {
         </div>
         <div className="unit_body">
             <div className="block"></div>
+                <div className="header">
+                    <h2>{substring} Quiz</h2>
+                </div>
                 <div className="data_testdata">
                     <div className="data_buttons">
                         <button className='buton_hover' data-api-name="unit1" onClick={handleButtonClick} >Unit 1 <SkipNextRoundedIcon className='icon'/> </button>

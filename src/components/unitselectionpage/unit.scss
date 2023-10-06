@@ -48,8 +48,21 @@
         .block{
             height: 10vh;
         }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2{
+                font-size: 15px;
+                // font-weight: 800;
+                margin-bottom: 20px;
+            }
+        }
         .data_testdata{
             margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             h4{
                 margin: 15px;
                 margin-left: 40px;
@@ -60,10 +73,12 @@
 
           
             .data_buttons{
-                display: flex;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
                 align-items: center;
-                flex-direction: column;
-                gap: 15px;
+                justify-content: center;
+                // flex-direction: column;
+                gap: 22px;
                 button{
                     display: flex;
                     align-items: center;
@@ -77,16 +92,17 @@
                     border: 0px solid #ee58ff;
                     border-radius: 5px;
                     box-shadow: #545252 2px 2px 0 0;
-                    width: 50%;
-                    height: 6vh;
+                    width: 15vh;
+                    // height: 6vh;
+                    padding: 5px;
+                    height: 8vh;
                     padding: 5px;
                     color: #ffffff;
                     cursor: pointer;
-                    
-                    font-weight: 600;
+                    font-weight: 900;
                     font-size: 12px;
-                    padding: 0 18px;
-                    line-height: 50px;
+                    // padding: 0 18px;
+                    // line-height: 50px;
                     text-align: center;
                     text-decoration: none;
                     user-select: none;
