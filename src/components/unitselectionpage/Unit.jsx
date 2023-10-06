@@ -3,6 +3,8 @@ import "./unit.scss"
 import SkipNextRoundedIcon from '@mui/icons-material/SkipNextRounded';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import image from "../Quiz/image.png"
+import AnimatedPage from '../../AnimatedPage';
+
 import { useAuth } from '../../AuthContext';
 import {useNavigate} from "react-router-dom"
 
@@ -16,6 +18,10 @@ const Unit = () => {
         navigate("/questions")
       };
   return (
+    <AnimatedPage>
+
+
+    
     <div className='unit'>
         <div className="unit_navbar">
         <div className="but" ><ArrowBackRoundedIcon className='icon'/></div>
@@ -46,6 +52,7 @@ const Unit = () => {
 
         </div>
     </div>
+    </AnimatedPage>
   )
 }
 
